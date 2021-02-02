@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dashboard2">
+
+    <fragment
+        android:id="@+id/dashboard2"
+        android:name="com.example.cb008452.Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/navigateTocategories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/NavigateFromDashToProDet"
+            app:destination="@id/product_Details"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/NavigateFromDashToShirts"
+            app:destination="@id/shirtsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.cb008452.Categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/navigateToDashboard"
+            app:destination="@id/dashboard2" />
+    </fragment>
+    <fragment
+        android:id="@+id/product_Details"
+        android:name="com.example.cb008452.Product_Details"
+        android:label="fragment_product__details"
+        tools:layout="@layout/fragment_product__details" >
+        <action
+            android:id="@+id/action_product_Details_to_dashboard2"
+            app:destination="@id/dashboard2" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="price"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/shirtsFragment"
+        android:name="com.example.cb008452.ShirtsFragment"
+        android:label="fragment_shirts"
+        tools:layout="@layout/fragment_shirts" >
+        <action
+            android:id="@+id/action_shirtsFragment_to_product_Details"
+            app:destination="@id/product_Details" />
+        <action
+            android:id="@+id/NavigateFromShirtsToDash"
+            app:destination="@id/dashboard2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantsFragment"
+        android:name="com.example.cb008452.PantsFragment"
+        android:label="fragment_pants"
+        tools:layout="@layout/fragment_pants" >
+        <action
+            android:id="@+id/action_pantsFragment_to_product_Details"
+            app:destination="@id/product_Details" />
+    </fragment>
+</navigation>

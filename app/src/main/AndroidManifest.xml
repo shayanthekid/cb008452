@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cb008452">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".addProducts"></activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ChoiceActivity" />
+        <activity android:name=".FireBaseTestActivity" />
+        <activity android:name="FirebaseDatabase.MainActivity" />
+        <activity android:name="FireBaseDatabase.FBTestActivity" />
+        <activity android:name="FireBaseDatabase.TestActivity" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".welcome" />
+        <activity android:name=".Shop" />
+        <activity
+            android:name=".LoginPage"
+            android:label="Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

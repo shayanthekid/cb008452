@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Details"
+    android:background="@color/Cultured">
+
+    <RelativeLayout
+        android:transitionName="containerTM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:transitionName="proTM"
+            android:id="@+id/featured_image"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:src="@drawable/tshirtslimfit"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <TextView
+            android:id="@+id/featured_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/featured_radioGroup"
+            android:layout_alignLeft="@+id/featured_radioGroup"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginBottom="201dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="T-Shirt SlimFit"
+            android:textColor="@color/RaisinBlack"
+            android:textSize="30sp"
+            android:transitionName="proNameTM"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="515dp" />
+
+        <TextView
+            android:transitionName="proPriceTM"
+            android:id="@+id/featured_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="4000Rps"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="20sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/RaisinBlack"
+            android:textSize="25sp" />
+
+<Button
+    android:layout_width="120sp"
+    android:layout_height="60sp"
+    android:text="Add to cart"
+    android:fontFamily="@font/atf"
+    android:layout_marginRight="20sp"
+    android:layout_marginBottom="20sp"
+    android:backgroundTint="@color/RaisinBlack"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    />
+
+        <RadioGroup
+            android:id="@+id/featured_radioGroup"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100sp"
+            android:layout_marginLeft="60sp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/featured_RadioSmall"
+            android:layout_width="160sp"
+            android:layout_weight="1"
+            android:layout_height="60sp"
+            android:text="S"
+            />
+            <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/featured_RadioMedium"
+            android:layout_width="160sp"
+                android:layout_weight="1"
+            android:layout_height="60sp"
+            android:text="M"
+            />
+            <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/featured_radioLarge"
+            android:layout_width="160sp"
+                android:layout_weight="1"
+            android:layout_height="60sp"
+            android:text="L"
+            />
+            <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/featured_RadioExtraLarge"
+            android:layout_width="160sp"
+                android:layout_weight="1"
+            android:layout_height="60sp"
+            android:text="XL"
+            />
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

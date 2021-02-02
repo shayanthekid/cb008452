@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@color/Cultured">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20sp">
+<TextView
+    android:id="@+id/ourText"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:text="Our"
+    android:textSize="40sp"
+    android:textColor="@color/RaisinBlack"
+    android:fontFamily="@font/atfbold"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atf"
+        android:text="Products"
+        android:layout_marginLeft="59sp"
+        android:textColor="@color/RaisinBlack"
+        android:textSize="40sp" />
+
+</RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="90sp"
+   >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/featured_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:background="@color/Cultured"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

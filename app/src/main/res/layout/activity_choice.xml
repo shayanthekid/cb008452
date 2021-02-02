@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceActivity"
+    android:background="@color/Cultured"
+    android:transitionName="transition_back">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="350sp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="35sp"
+            android:layout_marginRight="35sp"
+            app:srcCompat="@drawable/happy" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/atfbold"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="Start Shopping With \n Us Today"
+           android:layout_gravity="center"
+            android:textSize="35sp"
+            android:textColor="@color/Black"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="346dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <com.google.android.material.button.MaterialButton
+               android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="1dp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/TurquoiseGreen"
+                android:text="Login"
+                android:onClick="callLoginScreen"
+                android:transitionName="transition_login"
+                android:textColor="@color/Black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sign-Up"
+                android:insetTop="0dp"
+                android:insetBottom="1dp"
+                app:cornerRadius="20dp"
+                android:textColor="@color/WhiteSmoke"
+                android:backgroundTint="@color/BrightMaroon"
+                android:layout_weight="1"
+                android:transitionName="transition_signin"
+                android:onClick="callSignupScreen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
